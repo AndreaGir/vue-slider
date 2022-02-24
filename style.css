@@ -1,0 +1,19 @@
+.flex{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.immagini{
+    width: 600px;
+    height: 400px;
+    border: 1px solid black;
+}
+
+.scritte{
+    text-align: center;
+}
+
+.active{
+    display: block;
+}

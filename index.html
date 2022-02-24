@@ -10,6 +10,20 @@
 </head>
 <body>
 
+    <div id="carosello">
+        <div class="flex">
+            <button>indietro</button>
+            <div class="immagini">img</div>
+            <button>avanti</button>
+        </div>
+        <div class="scritte" v-for="carta in carte">
+            <h1>{{ nome }}</h1>
+            <p>{{ descrizione }}</p>
+        </div>
+
+    </div>
+    
+
 
 
 
