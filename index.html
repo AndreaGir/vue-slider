@@ -11,15 +11,19 @@
 <body>
 
     <div id="carosello">
-        <div class="flex">
-            <button>indietro</button>
-            <div class="immagini">img</div>
-            <button>avanti</button>
+
+        <button class="btindietro" @click="indietro">indietro</button>
+
+        <div class="flex notvisible" v-for="(carta, i) in carte" :class=" i === currentIndex ? 'active' : '' ">
+            <div  class="immagini"><img class="imgdentro" :src=" carta.img " alt=""></div>
         </div>
-        <div class="scritte" v-for="carta in carte">
-            <h1>{{ nome }}</h1>
-            <p>{{ descrizione }}</p>
+
+        <div class="scritte notvisible" v-for="(carta, i) in carte" :class=" i === currentIndex ? 'active' : '' ">
+            <h1 >{{ carta.nome }}</h1>
+            <p >{{ carta.descrizione }}</p>
         </div>
+
+        <button class="btavanti" @click="avanti">avanti</button>
 
     </div>
     

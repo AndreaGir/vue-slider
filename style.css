@@ -4,16 +4,42 @@
     justify-content: center;
 }
 
+#carosello{
+    position: relative
+}
+
 .immagini{
-    width: 600px;
-    height: 400px;
+    width: 500px;
+    height: 200px;
+    margin-left: 32%;
     border: 1px solid black;
+}
+
+.imgdentro{
+    min-width: 100%;
+    max-height: 100%;
 }
 
 .scritte{
     text-align: center;
 }
 
-.active{
+.notvisible.active{
     display: block;
+}
+
+.notvisible{
+    display: none;
+}
+
+.btavanti{
+    position: absolute;
+    right: 300px;
+    top: 200px;
+}
+
+.btindietro{
+    position: absolute;
+    left: 298px;
+    top: 200px;
 }
