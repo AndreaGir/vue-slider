@@ -35,16 +35,16 @@ const app = new Vue(
         },
         methods: {
             avanti: function(){
-                /* if( this.currentIndex  < this.carte.lenght - 1 ) */
+                if( this.currentIndex  < this.carte.length  - 1 ) 
                 this.currentIndex++
-                /* else
-                    this.currentIndex = 0 */
+                 else
+                    this.currentIndex = 0 
             },
             indietro: function(){
-                /* if(this.currentIndex > 0 ) */
+                 if(this.currentIndex > 0 ) 
                 this.currentIndex--
-                /* else
-                    this.currentIndex = this.carte.lenght -1 */
+                else
+                    this.currentIndex = this.carte.length  -1 
             }
 
 
